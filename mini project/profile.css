@@ -1,0 +1,22 @@
+*{
+    text-align: center;
+}
+html{
+    background-color: #9788eff9;
+    font-size: 16px;
+}
+body{
+    width: 480px;
+    margin: auto;
+}
+h1{
+    font-size: 42px;
+}
+img{
+    width: 440px;
+    height: 290px;
+    border-radius: 200px;
+}
+p{
+    font-size: 1.5rem
+}
