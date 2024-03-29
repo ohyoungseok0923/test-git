@@ -1,0 +1,99 @@
+*{ 
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+}
+.container{
+    height: 100%;
+    background-color: burlywood;
+}
+.chat-screen{
+    height: calc(100% - 120px);
+    overflow: scroll;
+}
+.user{
+    background-color: white;
+    height: 80px;
+    padding: 16px;
+}
+.user__pic{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: yellow;
+    background-size: 20px;
+}
+.user__column{ float : left;
+}
+.user__nic, .user__count{
+    margin: 5px;
+}
+.user__count{
+    font-size: 12px;
+    color: rgba(6, 4, 4, 0.689);
+}
+.chat-form{
+    height: 120px;
+    background-color: #ffffff;
+
+}
+.chat-form-field{
+    height: 120px;
+}
+
+.chat-form__msg{
+    float: left;
+    width: calc(100% - 120px);
+    height: 100px;
+    border: none;
+    resize: none;
+    font-size: 24px;
+    padding: 10px;
+    outline: none;
+}
+.chat-form__bt{
+    float: rihgt;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: burlywood;
+    font-size: 18px;
+}
+.chat-screen__text{
+    padding: 0;
+    list-style-type: none;
+}
+.chat-screen__text > .text{
+    background-color: rgb(21, 242, 36);
+    width: 280px;
+    height: 50px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 30px;
+    position: relative;
+    left: 20px;
+}
+.chat-screen__text > .text::after{
+ content: "";
+ border-right: 16px solid rgb(21, 242, 36);
+ border-bottom: 16px solid transparent;
+ position: absolute;
+ top: 10px;
+ left: -10px;
+}
+.chat-screen__text > .text:hover{
+    background-color: #035f2f;
+    transition: background-color 1500ms 200ms ease-in;
+    
+}
+.chat-screen__text > .text:hover::after {
+    border-right: 16px solid #035f2f;
+    transition: border-right 1.5s 200ms ease-in;
+}
